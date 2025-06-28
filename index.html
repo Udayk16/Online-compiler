@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iron Man Online Compiler</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Iron Compiler Mark-1 </h1>
+
+    <label for="language">Select Language:</label>
+    <select id="language">
+      <option value="54">C++</option>
+      <option value="62">Java</option>
+      <option value="71">Python</option>
+      <option value="63">JavaScript</option>
+    </select>
+
+    <div id="dropZone" class="drop-zone">
+      Drag & drop a code file here or choose below:
+    </div>
+    <input type="file" id="codeFile" accept=".py,.java,.cpp,.c,.js" />
+
+    <div class="editor-header">
+      <span>Code Snippet</span>
+      <button id="runIconBtn" title="Run Code">&#9658;</button>
+    </div>
+    <div id="editor" class="editor-block"></div>
+
+    <textarea id="input" placeholder="Input (optional)" rows="5"></textarea>
+    <button onclick="runCode()">Run Code</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

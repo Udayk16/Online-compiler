@@ -1,0 +1,136 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  margin: 0;
+  padding: 20px;
+  color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+select, input[type="file"], textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+select {
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+textarea {
+  background-color: #2e2e2e;
+  color: #f2f2f2;
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+input[type="file"] {
+  color: #FFD700;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  background-color: #8B0000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #b22222;
+}
+
+pre {
+  background-color: #2e2e2e;
+  padding: 15px;
+  color: #00e5ff;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.drop-zone {
+  border: 2px dashed #FFD700;
+  padding: 20px;
+  text-align: center;
+  color: #FFD700;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #2e2e2e;
+  transition: background-color 0.3s;
+}
+
+.drop-zone.dragover {
+  background-color: #444;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 8px 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #555;
+  border-bottom: none;
+  margin-top: 20px;
+}
+
+.editor-header span {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.editor-block {
+  height: 400px;
+  width: 100%;
+  border: 1px solid #555;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#runIconBtn {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px #FFD700;
+  transition: 0.3s ease;
+}
+
+#runIconBtn:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 0 12px #ffcc00;
+}
